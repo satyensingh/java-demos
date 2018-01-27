@@ -1,0 +1,23 @@
+package com.training.test;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.training.pojo.Employee;
+import com.training.service.EmployeeService;
+import com.training.service.EmployeeServiceImpl;
+
+public class Test {
+
+	public static void main(String[] args) {
+		EmployeeService employeeService = new EmployeeServiceImpl();
+		try {
+			List<Employee> employees = employeeService.getAllEmployees();
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

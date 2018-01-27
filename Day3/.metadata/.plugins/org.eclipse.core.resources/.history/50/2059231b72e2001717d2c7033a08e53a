@@ -1,0 +1,26 @@
+class A {
+	int i;
+	
+}
+class B extends A {
+	int j;
+	
+}
+class Circle {
+	int radius;
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Circle circle = new Circle();
+		
+		
+	}
+
+}
+
+
+
+

@@ -1,0 +1,16 @@
+class Product {
+	void addNewProduct(){
+		System.out.println("Added...");
+	}
+	void viewAllProducts() {
+		System.out.println("All Products...");
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,33 @@
+
+public class Bin {
+	private int data;
+	private boolean available;
+	
+	public synchronized int getData() {
+		while(!available) {
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		available=false;
+		notifyAll();
+		return data;
+	}
+
+	public synchronized void setData(int data) {
+		if(!available) {
+			this.data = data;
+			available = true;
+			notifyAll();
+		}
+		try {
+			wait();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+}

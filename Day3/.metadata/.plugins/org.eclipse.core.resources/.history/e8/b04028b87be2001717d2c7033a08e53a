@@ -1,0 +1,11 @@
+package mypack1;
+
+public class NonChild {
+	void display() {
+		Parent parent = new Parent();
+		System.out.println(parent.privateVariable);
+		System.out.println(parent.protectedVariable);
+		System.out.println(parent.defaultVariable);
+		System.out.println(publicVariable);
+	}
+}

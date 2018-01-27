@@ -1,0 +1,14 @@
+package com;
+
+public class BankEmployee extends Employee {
+	private double bonus;
+public BankEmployee() {
+	// TODO Auto-generated constructor stub
+}
+	public BankEmployee(int empId, String empName, double bonus) {
+		super(empId, empName);
+		this.bonus = bonus;
+	}
+	
+	
+}

@@ -1,0 +1,74 @@
+package com.moneymoney.account; 
+
+import com.moneymoney.entity.Customer;
+
+public class BankAccount {
+	public static final double INTEREST_RATE = 0.4;
+	
+	private final int accountNumber;
+	private Customer customer;
+	private double accountBalance;
+
+	private static int accountIdCounter;
+	
+	static {
+		accountIdCounter = 100;
+	}
+	
+	{
+		this.accountNumber = ++accountIdCounter;
+	}
+
+	public BankAccount(Customer customer, double accountBalance) {
+		this.customer = customer;
+		this.accountBalance = accountBalance;
+	}
+
+	public BankAccount(Customer customer) {
+			this.customer = customer;
+	}
+
+	static int getNextAccountNumber() {
+		return accountIdCounter+1;
+	}
+	
+	public void withdraw(double amount) {
+		if(amount<=accountBalance) {
+			accountBalance = accountBalance - amount;
+		}
+	}
+
+	public void deposit(double amount) {
+		accountBalance = accountBalance + amount;
+	}
+
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+
+	public Customer getAccountHolderName() {
+		return customer;
+	}
+
+	public void setAccountHolderName(Customer customer) {
+		this.customer = customer;
+	}
+
+	public double getAccountBalance() {
+		return accountBalance;
+	}
+
+	public void setAccountBalance(double accountBalance) {
+		this.accountBalance = accountBalance;
+	}
+
+	public String toString() {
+		String data = null;
+		data = "***********Account Details are as follows:-*******************\n";
+		data = data + "Account No. : " + accountNumber + "\n";
+		data = data + "Account Holder Name : " + customer.getCustomerName() + "\n";
+		data = data + "Account Balance : " + accountBalance + "\n";
+		return data;
+	}
+
+}

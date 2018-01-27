@@ -1,0 +1,17 @@
+package com;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class CreatingCopyOfAnImage {
+
+	public static void main(String[] args) {
+		
+		FileInputStream fileInputStream=null;
+		FileOutputStream fileOutputStream=null;
+		
+		
+
+	}
+
+}

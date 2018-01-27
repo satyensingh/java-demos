@@ -1,0 +1,30 @@
+package com.training.test;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.training.pojo.Employee;
+import com.training.service.EmployeeService;
+import com.training.service.EmployeeServiceImpl;
+
+public class Test {
+
+	public static void main(String[] args) {
+		EmployeeService employeeService = new EmployeeServiceImpl();
+		try {
+			
+			Employee newEmployee = new Employee(202, "Virendra", 30000);
+			employeeService.addEmployee(newEmployee);
+			
+			
+			List<Employee> employees = employeeService.getAllEmployees();
+			for (Employee employee : employees) {
+				System.out.println(employee);
+			}
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

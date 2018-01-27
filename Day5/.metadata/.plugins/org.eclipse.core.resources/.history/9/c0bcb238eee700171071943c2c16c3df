@@ -1,0 +1,10 @@
+package com.moneymoney.test;
+
+import com.moneymoney.account.list.BankList;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		BankList bankList = new BankList();
+	}
+}

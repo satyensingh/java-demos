@@ -1,0 +1,16 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Bin bin = new Bin();
+		Producer producerJob = new Producer(bin);
+		Consumer consumerJob = new Consumer(bin);
+		
+		Thread producer = new Thread( producerJob, "Producer Thread");
+		Thread consumer = new Thread("Consumer Thread");
+		
+		producer
+	}
+
+}

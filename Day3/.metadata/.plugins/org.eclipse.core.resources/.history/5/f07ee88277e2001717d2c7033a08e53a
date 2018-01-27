@@ -1,0 +1,26 @@
+public class SavingsAccount extends BankAccount {
+
+	private boolean salary;
+
+	public SavingsAccount(String accountHolderName, double accountBalance, boolean salary) {
+		super(accountHolderName, accountBalance);
+		this.salary = salary;
+	}
+
+	public SavingsAccount(String accountHolderName, boolean salary) {
+		super(accountHolderName);
+		this.salary = salary;
+	}
+
+	public boolean isSalary() {
+		return salary;
+	}
+
+	public void setSalary(boolean salary) {
+		this.salary = salary;
+	}
+
+	public String toString() {
+		return super.toString()+"salary=" + salary + "\n\n" ;
+	}	
+}

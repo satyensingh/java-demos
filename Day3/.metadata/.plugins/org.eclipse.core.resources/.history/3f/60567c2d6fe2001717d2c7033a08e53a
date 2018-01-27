@@ -1,0 +1,26 @@
+class A {
+	public A() {
+		System.out.println("A Ctor....");
+	}
+}
+class B extends A {
+	public B() {
+		System.out.println("B Ctor...");
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		//A a = new A();
+		B b = new B();
+		
+		
+	}
+
+}
+
+
+
+

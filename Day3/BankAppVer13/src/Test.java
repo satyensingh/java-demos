@@ -1,0 +1,17 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		SavingsAccount account = new SavingsAccount("Satyen", 20000, true);
+		//System.out.println(account.displayAccountDetails());
+		
+		System.out.println(account);//System.out.println(account.toString());
+		
+	}
+
+}
+
+
+
+

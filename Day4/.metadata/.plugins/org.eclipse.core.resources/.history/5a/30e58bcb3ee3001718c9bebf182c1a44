@@ -1,0 +1,5 @@
+package com.moneymoney.account.exception;
+
+public class InsufficientFundsException {
+
+}

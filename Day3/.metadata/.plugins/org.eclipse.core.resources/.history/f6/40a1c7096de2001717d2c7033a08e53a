@@ -1,0 +1,29 @@
+class A {
+	int i;
+	void display(){
+		System.out.println(" A ");
+	}
+}
+class B extends A {
+	int j;
+	void print() {
+		System.out.println(" B ");
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		A a = new A();
+		a.i = 100;
+		System.out.println(a.i);
+		a.display();
+		
+		
+	}
+
+}
+
+
+
+

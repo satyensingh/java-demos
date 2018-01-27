@@ -1,0 +1,16 @@
+package com;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class WritingObjects {
+
+	public static void main(String[] args) {
+		Employee employee = new Employee(101, "Satyen");
+		
+		FileOutputStream fileOutputStream = new FileOutputStream(new File("employee"));
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+
+	}
+
+}

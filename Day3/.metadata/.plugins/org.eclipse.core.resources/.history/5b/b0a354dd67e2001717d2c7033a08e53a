@@ -1,0 +1,15 @@
+public class Test {
+
+	public static void main(String[] args) {
+
+		//Static methods are invoked using class name
+		//Because they are class members and not an instance member.
+		System.out.println(SavingsAccount.getNextAccountNumber());
+		
+	}
+
+}
+
+
+
+

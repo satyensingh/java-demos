@@ -1,0 +1,31 @@
+package com;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class DesralizationTest {
+
+	public static void main(String[] args) {
+		
+		BankEmployee bankEmployee = null;
+		
+		try (FileInputStream fileInputStream = new FileInputStream(new File("employee"));
+				ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)) {
+
+			bankEmployee = (BankEmployee) objectInputStream.readObject();
+
+			System.out.println(bankEmployee);
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

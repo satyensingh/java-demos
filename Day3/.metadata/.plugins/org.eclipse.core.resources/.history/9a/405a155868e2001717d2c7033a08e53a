@@ -1,0 +1,28 @@
+class Abc {
+	final int num2;
+	static final int num = 100;
+	public Abc() {
+		num2 = 100;
+	}
+	
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		SavingsAccount account = new SavingsAccount("Satyen",true);
+		String data = account.displayAccountDetails();
+		System.out.println(data);
+		
+		//First remove private modifier from accountNumber in SavingsAccount class and then try this.
+		//account.accountNumber = 102;//Error, as accountNumber is Final.
+		
+		
+	}
+
+}
+
+
+
+

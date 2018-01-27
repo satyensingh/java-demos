@@ -1,0 +1,48 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Arrays:- Arrays are collection of values that are of same data types.
+		//Used to store multiple values under one variable name.
+		//Elements/Values in an Arrays are stored sequentially one after another in the memory
+		
+		//Creating an Array
+		//String names[] = {"Satyen","Vikram","Pooja","Vibhu","Dinesh"};
+		String names[] = new String[4];
+		names[0]="John";
+		names[1]="Sara";
+		names[2]="Pooh";
+		names[3]="Tony";
+		
+//		System.out.println(names[0]);
+//		System.out.println(names[1]);
+//		System.out.println(names[2]);
+//		System.out.println(names[3]);
+		
+//		for(int index=0; index<names.length; index++) {
+//			index=100;
+//			System.out.println(names[index]);
+//		}
+		
+//		for(String name : names) {//Read-Only For Loop
+//			System.out.println(name);
+//		}
+//		
+//		
+//		int scores[] = {96,56,87,98};
+		
+//		int index = 0;
+//		while(index<names.length) {
+//			System.out.println(names[index]);
+//			index++;
+//		}
+		
+		int index = 0;
+		do {
+			
+		}while(index<names.length);
+		
+	}
+
+}

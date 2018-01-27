@@ -1,0 +1,7 @@
+
+public class Customer {
+	private int customerID;
+	private String customerName;
+	private BankAccount bankAccount;
+	
+}

@@ -1,0 +1,22 @@
+class Product {
+	void addNewProduct(){
+		System.out.println("Added...");
+	}
+	void viewAllProducts() {
+		System.out.println("All Products...");
+	}
+	void deleteProduct() {
+		System.out.println("Product Deleted...");
+	}
+	void search() {
+		System.out.println("searching...");
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

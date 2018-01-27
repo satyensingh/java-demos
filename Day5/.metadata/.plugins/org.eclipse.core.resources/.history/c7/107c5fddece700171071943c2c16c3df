@@ -1,0 +1,21 @@
+import java.util.Set;
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		
+		//Set -> Allow only unique values
+		//		Also gives you performance in reading and manipulating
+		/*
+		 * HashSet
+		 * 		Good for large no. of objects
+		 * 		Does not maintains the insertion order
+		 * LinkedHashSet
+		 * TreeSet
+		 */
+		Set<String> names = new Hash
+		
+
+	}
+
+}

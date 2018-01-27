@@ -1,0 +1,13 @@
+
+public class Producer implements Runnable {
+	private Bin bin;
+	
+	
+	
+	@Override
+	public void run() {
+		
+		
+	}
+
+}

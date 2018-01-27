@@ -1,0 +1,4 @@
+public class SavingsAccount {
+	private double accountBalance;
+
+}

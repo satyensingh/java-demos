@@ -1,0 +1,15 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		SavingsAccount savingsAccount = new SavingsAccount(101, "Satyen", 10_000, true);
+		
+		//To open Zero balance account
+		SavingsAccount savingsAccount2 = new SavingsAccount(102,"Vikram", 20_000, false);		
+	}
+
+}
+
+
+
+

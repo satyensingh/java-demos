@@ -1,0 +1,16 @@
+
+public class Bin {
+	private int data;
+	private boolean available;
+	public int getData() {
+		
+		return data;
+	}
+
+	public void setData(int data) {
+		if()
+		this.data = data;
+	}
+	
+	
+}

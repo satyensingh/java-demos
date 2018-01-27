@@ -1,0 +1,12 @@
+package com;
+
+public class SerailizationTest {
+
+	public static void main(String[] args) {
+		
+		BankEmployee bankEmployee = new BankEmployee(101, "Satyen", 2000);
+		
+
+	}
+
+}

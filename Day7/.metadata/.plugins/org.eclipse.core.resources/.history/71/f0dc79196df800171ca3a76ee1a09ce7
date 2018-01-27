@@ -1,0 +1,9 @@
+package com.training.pojo;
+
+public class Employee {
+	private int empId;
+	private Strig empName;
+	private double salary;
+	
+	
+}

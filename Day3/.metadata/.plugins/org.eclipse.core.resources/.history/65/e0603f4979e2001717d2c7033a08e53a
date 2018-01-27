@@ -1,0 +1,38 @@
+//Method Overriding 
+/*
+ * Rules of Method overriding
+ * 1) MethodName and Parameters must match
+ * 2) 
+ * 3)
+ * 4)
+ * 5) 
+ * 6) 
+ */
+class A {
+	//Overridden method
+	void display() {
+		System.out.println("Class - A");
+	}
+}
+class B extends A {
+	//Overriding Method
+	@Override//This will help dev to override right method
+	void display() {
+		System.out.println("Class - B");
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		B b = new B();
+		b.display();
+		
+		A a = new B();
+		
+	}
+
+}
+
+
+
+

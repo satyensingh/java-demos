@@ -1,0 +1,52 @@
+interface AdminRole {
+	void addNewProduct();
+	void deleteProduct();
+	void viewAllProducts();
+	void search() ;
+}
+interface CustomerRole {
+	void viewAllProducts();
+	void search() ;
+}
+class Product implements AdminRole, CustomerRole{
+
+	@Override
+	public void addNewProduct() {
+		System.out.println("Added..");
+	}
+
+	@Override
+	public void deleteProduct() {
+		System.out.println("Deleted...");
+	}
+
+	@Override
+	public void viewAllProducts() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void search() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		//To Admin
+		AdminRole service = new Product();
+		service.addNewProduct();
+		service.viewAllProducts();
+		service.deleteProduct();
+		service.search();
+		
+		
+		//To Customer
+		CustomerRole customer = new Product();
+
+	}
+
+}

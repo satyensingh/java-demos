@@ -1,0 +1,15 @@
+
+public class Consumer implements Runnable {
+	private Bin bin;
+	
+	public Consumer(Bin bin) {
+		this.bin = bin;
+	}
+
+	@Override
+	public void run() {
+		for(int i=0;i< 10;i++) {
+			System.out.println("Consumer gets "+bin.getData());
+		}
+	}
+}

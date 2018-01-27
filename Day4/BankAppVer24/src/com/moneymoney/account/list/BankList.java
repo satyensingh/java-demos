@@ -1,0 +1,22 @@
+package com.moneymoney.account.list;
+
+import com.moneymoney.account.BankAccount;
+
+public class BankList {
+	private BankAccount[] accArray;
+	private int top;
+
+	public BankList(int size) {
+		top = -1;
+		accArray = new BankAccount[size];
+	}
+
+	public BankAccount[] printAll() {
+		return accArray;
+	}
+
+	public void addNewAccount(BankAccount ba) {
+		if (top < accArray.length)
+			accArray[++top] = ba;
+	}
+}

@@ -1,0 +1,25 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		SavingsAccount savingsAccount = new SavingsAccount();
+		
+		savingsAccount.setAccountNumber(101);
+		savingsAccount.setAccountBalance(10_000);
+		savingsAccount.setAccountHolderName("Satyen");
+		savingsAccount.setSalary(true);
+		
+		savingsAccount.withdraw(1000);
+		System.out.println(savingsAccount.displayAccountDetails());
+
+		savingsAccount.deposit(2000);
+		System.out.println(savingsAccount.displayAccountDetails());
+		
+	}
+
+}
+
+
+
+

@@ -1,0 +1,15 @@
+
+public class Bin {
+	private int data;
+
+	public int getData() {
+		Thread.sleep(100);
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+	
+	
+}

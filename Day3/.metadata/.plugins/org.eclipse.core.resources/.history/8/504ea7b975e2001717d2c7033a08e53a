@@ -1,0 +1,15 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		SavingsAccount account = new SavingsAccount("Satyen", true);
+		SavingsAccount account2 = new SavingsAccount("Vikram",10_000, false);
+		
+	}
+
+}
+
+
+
+

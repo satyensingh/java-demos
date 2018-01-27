@@ -1,0 +1,23 @@
+class A {
+	int i;
+	void display(){
+		System.out.println(" A ");
+	}
+}
+class B {
+	int j;
+	void print() {
+		System.out.println("B");
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+
+
+

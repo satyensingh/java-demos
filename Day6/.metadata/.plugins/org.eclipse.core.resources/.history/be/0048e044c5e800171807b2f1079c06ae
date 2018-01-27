@@ -1,0 +1,19 @@
+
+public class Bin {
+	private int data;
+
+	public int getData() {
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+		\	e.printStackTrace();
+		}
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+	
+	
+}

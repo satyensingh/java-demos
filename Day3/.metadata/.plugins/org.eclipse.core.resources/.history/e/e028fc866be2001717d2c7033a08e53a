@@ -1,0 +1,16 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		SavingsAccount account = new SavingsAccount("Satyen", 10_000, true);
+		
+		System.out.println(account.getAccountBalance());
+		
+	}
+
+}
+
+
+
+

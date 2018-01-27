@@ -1,0 +1,26 @@
+package com;
+
+import java.io.File;
+import java.io.IOException;
+
+public class TestFile {
+
+	public static void main(String[] args) {
+		File file = new File("untitled.txt");
+		boolean fileExist = file.exists();
+		if(fileExist)
+			System.out.println("File Exist in the file system");
+		else {
+			System.out.println("File not found or does not exist");
+			System.out.println("Creating file...");
+			try {
+				file.createNewFile();
+				System.out.println("File created succesfully...");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
+
+}

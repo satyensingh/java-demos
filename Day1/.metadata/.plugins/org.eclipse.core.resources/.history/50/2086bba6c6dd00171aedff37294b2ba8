@@ -1,0 +1,19 @@
+public class Test {
+
+	public static void main(String[] args) {
+		
+		SavingsAccount account = new SavingsAccount("Abc", true);
+		SavingsAccount account2 = new SavingsAccount("Abc", true);
+		SavingsAccount account3 = new SavingsAccount("Abc", true);
+		SavingsAccount account4 = new SavingsAccount("Abc", true);
+		SavingsAccount account5 = new SavingsAccount("Abc", true);
+		
+		System.out.println(SavingsAccount.getNextAccountNumber());
+		
+	}
+
+}
+
+
+
+

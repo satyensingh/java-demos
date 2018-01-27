@@ -1,0 +1,40 @@
+//creating a class Employee
+class Employee {
+	//Properties or Instance Members
+	int empId;
+	String empName;
+	double salary;
+	
+	
+}
+class Car {
+	String color;
+	String manufacturer;
+	String modelNo;
+	int currentSpeed;
+	
+	void start() {
+		System.out.println("Car Started...");
+	} 
+	void accelerate() {
+		currentSpeed = currentSpeed + 1;
+		System.out.println("Current Speed Is: "+currentSpeed);
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		Car car = new Car();
+		car.color = "Red";
+		car.manufacturer = "BMW";
+		car.modelNo = "Z4";
+		
+		car.start();//Behaviours are Actions - Methods/Functions
+		car.accelerate();
+		car.accelerate();
+		car.accelerate();
+		car.accelerate();
+		
+	}
+
+}

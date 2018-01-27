@@ -1,0 +1,27 @@
+class A {
+	int i;
+	public A() {
+		// TODO Auto-generated constructor stub
+	}
+}
+class B extends A {
+	int j;
+	public B(int i, int j) {
+		
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		B b = new B(100, 200);
+		
+		
+	}
+
+}
+
+
+
+

@@ -1,0 +1,17 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		/*
+		 * Most Restrictive to least restrictive Access Specifiers
+		 * 
+		 * 1) Private -> Accessible only in the same class
+		 * 2) default -> Accessible anywhere in the same package
+		 * 3) Protected -> Accessible anywhere in the same package and in Child class in diff package
+		 * 4) Public
+		 * 
+		 */
+
+	}
+
+}

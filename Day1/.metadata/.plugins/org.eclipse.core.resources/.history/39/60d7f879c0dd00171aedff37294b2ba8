@@ -1,0 +1,21 @@
+class Circle {
+	int radius;
+//	Circle(){
+//		System.out.println("invoked...");
+//	}
+	Circle(int radius){
+		this.radius = radius;
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}
+
+
+
+

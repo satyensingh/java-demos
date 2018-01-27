@@ -1,0 +1,16 @@
+
+public class Test {
+	
+	static void display(Object obj) {
+		System.out.println(obj);
+	}
+	
+	public static void main(String[] args) {
+		display(100);//100(int) -> Integer(100) -> Number -> Object
+		
+		int num = 100;
+		Integer numRef = num; 
+		
+	}
+
+}

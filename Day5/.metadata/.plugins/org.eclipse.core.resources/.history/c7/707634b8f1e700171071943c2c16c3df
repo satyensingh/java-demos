@@ -1,0 +1,31 @@
+import java.util.Set;
+import java.util.TreeSet;
+
+class Customer implements Comparable {
+	int custId;
+	String custName;
+	public Customer(int custId, String custName) {
+		this.custId = custId;
+		this.custName = custName;
+	}
+	@Override
+	public String toString() {
+		return "Customer [custId=" + custId + ", custName=" + custName + "]";
+	}
+}
+public class Test05 {
+
+	public static void main(String[] args) {
+		Set<Customer> customers = new TreeSet<>();
+		customers.add(new Customer(103, "Vikram"));
+		customers.add(new Customer(101, "Vinay"));
+		customers.add(new Customer(102, "Ahuja"));
+		customers.add(new Customer(101, "Vinay"));
+		
+		for (Customer customer : customers) {
+			System.out.println(customer);
+		}
+
+	}
+
+}

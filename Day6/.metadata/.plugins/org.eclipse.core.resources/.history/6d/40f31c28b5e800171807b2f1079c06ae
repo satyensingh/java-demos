@@ -1,0 +1,14 @@
+package com;
+
+import java.io.File;
+import java.io.FileWriter;
+
+public class TestWritingFileCB {
+
+	public static void main(String[] args) {
+		FileWriter writer = null;
+		writer = new FileWriter(new File("Sample.txt"));
+
+	}
+
+}

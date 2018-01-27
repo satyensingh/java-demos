@@ -1,0 +1,25 @@
+//creating a class Employee
+class Employee {
+	//Properties or Instance Members
+	int empId;
+	String empName;
+	double salary;
+	
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		//Creating an Object of class Employee
+		Employee employee = new Employee();
+		
+		employee.empId = 101;
+		employee.empName = "Satyen";
+		employee.salary = 10_000;
+		
+		System.out.println(employee.empId);
+		System.out.println(employee.empName);
+		System.out.println(employee.salary);
+	}
+
+}

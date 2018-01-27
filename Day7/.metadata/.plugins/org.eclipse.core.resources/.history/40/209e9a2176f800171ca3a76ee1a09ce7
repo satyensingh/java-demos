@@ -1,0 +1,58 @@
+package com.training.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.training.pojo.Employee;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	private Connection connection;
+	private Statement statement;
+	private PreparedStatement preparedStatement;
+	private ResultSet resultSet;
+
+	@Override
+	public void addEmployee(Employee employee) throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.jdbc.Driver");
+		String url = "jdbc:mysql://localhost:3306/mydb";
+		String username = "root";
+		String password = "root";
+		connection = DriverManager.getConnection(url, username, password);
+		String sql = "INSERT INTO EMP(empno, ename, sal, deptno) values(?,?,?,10)";
+		preparedStatement = connection.prepareStatement(sql);
+		preparedStatement.setInt(1, employee.getEmpId());
+		preparedStatement.setString(2, employee.getEmpName());
+		preparedStatement.setDouble(3, employee.getSalary());
+		
+	}
+
+	@Override
+	public List<Employee> getAllEmployees() throws ClassNotFoundException, SQLException {
+		List<Employee> employees = new ArrayList<>();
+		
+		Class.forName("com.mysql.jdbc.Driver");
+		String url = "jdbc:mysql://localhost:3306/mydb";
+		String username = "root";
+		String password = "root";
+		connection = DriverManager.getConnection(url, username, password);
+		statement = connection.createStatement();
+		String sql = "Select * from emp";
+		resultSet = statement.executeQuery(sql);
+		while(resultSet.next()) {
+			int empId = resultSet.getInt("empno");
+			double salary = resultSet.getDouble("sal");
+			String empName = resultSet.getString("ename");
+			Employee employee = new Employee(empId,empName, salary);
+			employees.add(employee);
+		}
+		return employees;
+	}
+
+}

@@ -1,0 +1,39 @@
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		
+		//Set -> Allow only unique values
+		//		Also gives you performance in reading and manipulating
+		/*
+		 * HashSet
+		 * 		Good for large no. of objects
+		 * 		Does not maintains the insertion order
+		 * 
+		 * LinkedHashSet
+		 * 		Good for small amount of objects
+		 * 		As the no. of object/element increases, it's performance goes down
+		 * 		Mainatins the insertion order.
+		 * 
+		 * TreeSet
+		 * 		Used to sort elements in order of asc or desc.
+		 * 		
+		 */
+		Set<String> names = new HashSet<>();
+		names.add("Pooja");
+		names.add("Vikram");
+		names.add("Dinesh");
+		names.add("John");
+		names.add("vinay");
+		
+		Iterator<String> itr = names.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+
+	}
+
+}

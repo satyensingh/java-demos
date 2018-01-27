@@ -1,0 +1,10 @@
+package com;
+
+public class WritingObjects {
+
+	public static void main(String[] args) {
+		Employee employee = new Employee(101, "Satyen");
+
+	}
+
+}

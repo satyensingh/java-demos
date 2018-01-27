@@ -1,0 +1,23 @@
+class Product {
+	void addNewProduct(){//Only Admin can access
+		System.out.println("Added...");
+	}
+	void viewAllProducts() {//Customer and Admin both cann access this method
+		System.out.println("All Products...");
+	}
+	void deleteProduct() {//Only Admin can access
+		System.out.println("Product Deleted...");
+	}
+	void search() {//Customer and Admin both can access
+		System.out.println("searching...");
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		Product product = new Product();
+		
+
+	}
+
+}

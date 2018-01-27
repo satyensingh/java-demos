@@ -1,0 +1,15 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Arrays:- Arrays are collection of values that are of same data types.
+		//Used to store multiple values under one variable name.
+		//Elements/Values in an Arrays are stored sequentially one after another in the memory
+		
+		//Creating an Array
+		String names[] = {"Satyen","Vikram","Pooja","Vibhu","Dinesh"};
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.training.dao;
+
+import com.training.pojo.Employee;
+
+public interface EmployeeDAO {
+	
+	void addEmployee(Employee employee);
+	List<Employee> getAllEmployees();
+	
+}

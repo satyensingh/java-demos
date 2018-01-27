@@ -1,0 +1,14 @@
+
+public class Consumer implements Runnable {
+
+	private Bin bin;
+	
+	
+	
+	@Override
+	public void run() {
+		
+
+	}
+
+}

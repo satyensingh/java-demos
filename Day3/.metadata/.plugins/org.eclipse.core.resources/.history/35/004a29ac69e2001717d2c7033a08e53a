@@ -1,0 +1,19 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		int i = 100;
+		System.out.println(i);
+		
+		
+		SavingsAccount account = new SavingsAccount("Satyen", 20000, true);
+		
+		System.out.println(account);
+		
+	}
+
+}
+
+
+
+

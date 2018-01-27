@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;BankAppVer20/src/com.moneymoney.account&apos;&#x0A;- Original project: &apos;BankAppVer20&apos;&#x0A;- Destination element: &apos;BankAppVer20/src/com.moneymoney.account&apos;&#x0A;- Original elements:&#x0A;     CurrentAccount.java&#x0A;     SavingsAccount.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;com.moneymoney.account" element1="/src&lt;{CurrentAccount.java" element2="/src&lt;{SavingsAccount.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1513440279323" units="2" version="1.0"/>
+</session>

@@ -1,0 +1,372 @@
+Java Training
+About Speaker:-
+	Name:- Satyendra Singh
+	Exp:-  6+ years of exp purely into Java and Big Data Training
+	Clients:- Oracle, Nokia, Quinnox, Bank Of America, LnT Infotech, Capgemnini and many.....
+	
+Agenda:-
+1) Basics Of Java(Introduction)
+	year 1995
+	James Gosling
+	Team - Green
+	Java - Programming Language
+	
+	Features:-
+		1) Simple
+		2) OOP - Object Oriented Programming
+		3) Robust - Exception Handling
+		4) Networking - Socket and UDP Programming
+		5) Multithreaded - Multiple threads can run at the same time to increase the performance of the application.
+		6) Distributed - Applications can run on multiple machines(clustered network). used to build enterprise application.
+		7) Platform Independent - Write/Compile Once, Run Anywhere(WORA/CORA), It is not bound to any specific OS.
+		8) Secure - With no interaction with System OS, it runs application free from viruses and temper.
+		
+		Installing Java on your machine:-
+			macOS
+				brew install java
+				OR
+				.dmg file.
+				
+		Download Eclipse IDE
+
+2) Language Cnstructs
+	Variables
+		Variables are like Containers.
+		They hold values of different types(integer, characters, etc...)
+		
+		To Create a Variable:-
+			Syntax:-
+				datatype variableName;
+			Example:-
+				int num;
+		Data Types
+			
+			1) byte 	-> 1 byte		
+			2) short	-> 2 bytes
+			3) int		-> 4 bytes
+			4) long		-> 8 bytes
+			5) float	-> 4 bytes
+			6) double	-> 8 bytes			
+			7) char		-> 2 bytes
+			8) boolean	-> OS dependent
+		
+			String
+		
+		Declaration
+	Arrays
+	Decision Constructs
+		If.else...., Switch-case
+	Loops
+		for, while, do..while, Enhanced For Loop(Foreach)
+		
+		
+		For Loop:-
+			1) Use when you know the number of iteration to perform.
+			
+		While Loop:-
+			1) Use when you don't know the number of iteration to perform.
+			Example:-
+				When reading a file, we may not know how many times i am going to read the characters or lines from that file.
+				Iterate till the File ends.
+			
+			
+		Do While Loop:-
+			1) Use when you don't know the number of iteration to perform.
+			2) When the body of the loop must get executed atleast once even if the condition in while(condition) evaluates to be false.
+			
+			Example:-
+				Building a menu-driven program.
+				No matter the user chooses to exit from the menu, we must show him the menu atleast once.
+		
+		break and continue.
+		
+Day 2 Agenda	
+
+3) Platform Independent
+	Write Once, Run Anywhere!
+	Compile Once, Run Anywhere!
+	
+	Java Compiler - Platform Dependent
+	JRE(JVM) - Platform Dependent
+	
+	.class files - Platform Independent
+	
+	JDK - For Developers
+	JRE - For Client
+	
+	Bytecode - Content of .class file.
+	
+4) Classes and Objects
+	Class
+		Model/Blueprint that describes the property and behaviour of an object
+		Class is a template which is used to create Objects.
+		If class is like a table in RDBMS/Database
+		
+		Example:-
+			Employee
+				properties:-
+					empId
+					empName
+					salary
+				behaviour:-
+					work
+					attendMeeting
+					speaksInConferences
+					
+			SavingsAccount
+				properties:-
+					accountNumber
+					accountBalance
+					accountHolderName
+					salary
+				behaviour:-
+					withdraw
+					deposit
+					
+	Object
+		Realtime Entity
+		Instance of a class
+		
+		Example:-
+			If Employee is a class then a person named matt is an object working for some company.
+			If SavingsAccount is a class then the acount that a person holds with accountNumber is an object.
+		Then Object is row/tuple.
+		
+		
+5) Static and Non-Static Members
+--------------------------Session 3----------------------------
+6) Constant, Compile-time Constant and toString()
+	Constant:
+		Values of variables that cannot be changed once assigned.
+		
+		final double PI = 3.14;
+		PI = 4.23;//Error		
+
+
+		final double PI;
+		PI = 3.14;
+
+	Compile-time Constant:-
+		Shared constant.
+		must be initialized where it is declared.
+		Must also be static.
+		At compile time the varibales are replaced with it's value.
+
+		static final double PI = 3.14;
+
+		static final double PI;//Error
+
+	toString()
+		toString is a method that every class has by default.
+		We can override this method and can make it to display what we want.
+		Used for printing String representation of an object.
+
+
+7) OOP Features/Pillars
+	Abstraction
+		Externally Visible behaviour of an Object.
+
+		Consider an Object, An ATM Device.
+		Ask a question to the object, What Client/User can do with it?
+			1) Check Current Balance
+			2) deposit
+			3) withdraw
+			
+		Example 2:- Car
+			1) Drive
+			2) accelerate
+			3) applyBrake
+
+
+		In Program:-
+			All Publicly accessible functions/methods are abstraction.
+
+	Encapsulation
+		Internal Data Structure that give rise to externally visible behaviour of an object is
+			Encapsulation.
+
+		Consider an Object, An ATM Device.
+		Ask a question to the object, How externally visible behaviour of an object is acheived/processed?
+			1) Check Current Balance -> Code/Logic is an encapsulation
+			2) deposit			-> code/logic is an encapsulation
+			3) withdraw			-> code/logic
+			
+		Example 2:- Car
+			1) Drive				-> code/logic
+			2) accelerate			-> code/logic
+			3) applyBrake			-> code/logic
+		
+		In Program:-
+			All code/logic written in publicly/privately defined functions/methods are encapsulation
+
+
+	Reusability
+
+		Inheritance:-
+			IS-A Relationship			
+				SavingsAccount IS-A BankAccount
+				CurrentAccount IS-A BankAccount
+
+			BankAccount
+				accountNumber
+				accountHolderName
+				accountBalance
+				
+				deposit()
+				withdraw()
+				getters/setters	
+
+			SavingsAccount extends BankAccount
+				salary
+		
+
+			CurrentAccount extends BankAccount
+				odLimit
+			
+			Generalization:-
+				Moving all the common properties and behaviour of an object to a saperate class
+				and then inheriting it.
+	
+		Composition:-
+			HAS-A relationship
+				Car HAS-A Engine
+				Customer HAS-A BankAccount
+
+			Engine
+				start()
+
+			Car
+				Engine engine; 
+				start()
+
+						
+			Customer
+
+			BankAccount
+		
+	Method Overriding
+		Taking the method from parent class and re-writing the logic in it.
+		
+	Upcasting
+		The reference is of Parent Type but the object is of Child Type.
+
+					
+	Polymorphism
+		
+	
+
+8) Access Specifiers
+9) Packages					
+
+--------------------------Session 4------------------------------
+10) Abstract Classes
+11) Interfaces
+12) Referring Java Documentation
+13) Introduction to Exception Handling
+14) Checked/Unchecked Exceptions
+15) Using try, catch, ﬁnally, throw, throws
+16) Exception Propagation
+17) Pre-deﬁned Exceptions
+18) User Deﬁned Exceptions
+--------------------------Session 5------------------------------
+19) Wrapper classes
+	int	-> Integer
+	float	-> Float	
+	double	-> Double
+	long	-> Long
+	char	-> Character
+	byte	-> Byte
+	short	-> Short
+		
+	void display(Object obj){
+		
+	}
+	int i=100;
+	display(i);
+
+
+20) Collection Framework
+	It is a collection of elements of different data types.
+	Similar to an Array.
+	
+	Problem with Array is:-
+		1) Arrays are fixed in size.
+			int arr[] = new int[100];
+		2) Sorting and Searching like algo must be written by developers
+		3) What if multiple threads wants to access the array at the same time
+		4) Arrays always take similar types of data
+		5) No control on duplicate elements.
+
+	Collection framework gives solution for the above:-
+		
+
+21) Sorting Objects(Comparable and Comparator)
+	
+Maps
+	Are key-value pair collection
+	keys are unique
+	values are object which may or may not be unique
+
+	Values are retrieved using key.
+	to fetch the value from map colleaction, we must know the its corresponding
+		key.
+
+	Diff maps:-
+		1) HashMap
+			Key can be null
+
+		2) LinkedHashMap
+			Key cannot be null
+
+		3) TreeMap
+			Keys are stored in sorted order.
+
+--------------------------Session 6-------------------------------
+22) Overview of Java IO Package
+23) Byte streams
+24) Character streams
+25) Object serialization & Object Externalization
+26) Introduction to multithreading
+27) Thread life cycle
+28) Thread priorities
+29) Using wait() & notify()
+30) DeadLocks
+--------------------------Session 7-------------------------------
+31) JDBC Architecture
+32) Using JDBCI API
+33) Transaction Management
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

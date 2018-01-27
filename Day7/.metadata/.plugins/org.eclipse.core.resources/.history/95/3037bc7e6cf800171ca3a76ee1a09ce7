@@ -1,0 +1,16 @@
+package com.moneymoney.test;
+
+import java.util.Set;
+
+import com.moneymoney.account.BankAccount;
+import com.moneymoney.account.CurrentAccount;
+import com.moneymoney.account.SavingsAccount;
+import com.moneymoney.account.list.BankList;
+import com.moneymoney.entity.Customer;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+	}
+}

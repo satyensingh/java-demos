@@ -1,0 +1,12 @@
+public class SavingsAccount extends BankAccount {
+
+	private boolean salary;
+
+	public SavingsAccount(String accountHolderName, double accountBalance, boolean salary) {
+		super(accountHolderName, accountBalance);
+		this.salary = salary;
+	}
+
+	
+	
+}

@@ -1,0 +1,27 @@
+class A {
+	public void display() {
+		System.out.println("Class - A");
+	}
+}
+class B extends A {
+	@Override
+	public void display() {
+		System.out.println("Class - B");
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		B b = new B();
+		b.display();//No Error. coz, Class B(Which is a ref type) does have method display()
+		
+		A a = new B();//Upcasting
+		a.display();//Error. Coz, Class A (which is a ref type) does not have method display()
+		
+	}
+
+}
+
+
+
+

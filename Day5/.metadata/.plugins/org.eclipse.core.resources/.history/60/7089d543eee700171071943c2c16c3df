@@ -1,0 +1,14 @@
+package com.moneymoney.test;
+
+import com.moneymoney.account.SavingsAccount;
+import com.moneymoney.account.list.BankList;
+import com.moneymoney.entity.Customer;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		BankList bankList = new BankList();
+		bankList.addNewAccount(new SavingsAccount(new Customer(101,"Vinay"),1000));
+		
+	}
+}

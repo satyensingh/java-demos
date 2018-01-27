@@ -1,0 +1,22 @@
+class Employee {
+	int empId;
+	double salary;
+	
+	public Employee(int empId, double salary) {
+		this.empId = empId;
+		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", salary=" + salary + "]";
+	}
+}
+public class Test03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

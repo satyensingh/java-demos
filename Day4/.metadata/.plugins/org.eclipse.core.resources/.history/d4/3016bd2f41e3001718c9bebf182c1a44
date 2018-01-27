@@ -1,0 +1,12 @@
+
+public class Test {
+	
+	static void display(Object obj) {
+		System.out.println(obj);
+	}
+	
+	public static void main(String[] args) {
+		display(100);
+	}
+
+}

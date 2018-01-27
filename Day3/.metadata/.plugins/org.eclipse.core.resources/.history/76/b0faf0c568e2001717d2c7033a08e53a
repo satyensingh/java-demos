@@ -1,0 +1,31 @@
+class Abc {
+	final int num2;//This is an instance member which is final
+	static final int num = 100;//This is a class member and final at the same time
+	public Abc() {
+		num2 = 200;
+	}
+	public void print() {
+		System.out.println(num);//System.out.println("100");
+		System.out.println(num2);
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		SavingsAccount account = new SavingsAccount("Satyen",true);
+		String data = account.displayAccountDetails();
+		System.out.println(data);
+		
+		//First remove private modifier from accountNumber in SavingsAccount class and then try this.
+		//account.accountNumber = 102;//Error, as accountNumber is Final.
+		
+		
+	}
+
+}
+
+
+
+

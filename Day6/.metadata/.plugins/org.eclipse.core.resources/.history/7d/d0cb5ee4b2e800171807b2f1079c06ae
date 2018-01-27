@@ -1,0 +1,13 @@
+package com;
+
+import java.io.File;
+
+public class TestFile {
+
+	public static void main(String[] args) {
+		File file = new File("untitled.txt");
+		boolean fileExist = file.exists();
+		System.out.println(fileExist);
+	}
+
+}

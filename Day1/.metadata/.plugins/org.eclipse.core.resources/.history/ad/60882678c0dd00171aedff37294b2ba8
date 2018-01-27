@@ -1,0 +1,22 @@
+class Circle {
+	int radius;
+//	Circle(){
+//		System.out.println("invoked...");
+//	}
+	Circle(int radius){
+		this.radius = radius;
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+
+		Circle circle5 = new Circle(10);
+		System.out.println(circle5.radius);
+	}
+
+}
+
+
+
+

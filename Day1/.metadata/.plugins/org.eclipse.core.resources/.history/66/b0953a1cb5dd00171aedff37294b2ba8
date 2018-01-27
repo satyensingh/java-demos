@@ -1,0 +1,28 @@
+//creating a class Employee
+class Employee {
+	//Properties or Instance Members
+	int empId;
+	String empName;
+	double salary;
+	
+	
+}
+class Car {
+	String color;
+	String manufacturer;
+	String modelNo;
+	
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		Car car = new Car();
+		car.color = "Red";
+		car.manufacturer = "BMW";
+		car.modelNo = "Z4";
+		
+		car.start();
+	}
+
+}

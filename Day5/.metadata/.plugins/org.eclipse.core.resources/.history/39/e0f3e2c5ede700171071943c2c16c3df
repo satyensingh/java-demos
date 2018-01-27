@@ -1,0 +1,13 @@
+package com.moneymoney.test;
+
+import com.moneymoney.account.CurrentAccount;
+import com.moneymoney.account.SavingsAccount;
+import com.moneymoney.account.exception.InsufficientFundsException;
+import com.moneymoney.entity.Customer;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+	}
+}

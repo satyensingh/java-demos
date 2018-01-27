@@ -1,0 +1,11 @@
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		
+		//Set -> Allow only unique values
+		
+
+	}
+
+}

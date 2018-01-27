@@ -1,0 +1,12 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Bin bin = new Bin();
+		Producer producer = new Producer(bin);
+		Consumer consumer = new Consumer(bin);
+
+	}
+
+}

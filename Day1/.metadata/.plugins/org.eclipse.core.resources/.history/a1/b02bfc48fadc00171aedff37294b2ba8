@@ -1,0 +1,19 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		String names[] = {"Satyen","Vikram","Pooja","Vibhu","Dinesh", "Pooh", "John", "Matt"};
+		
+		String nameToSearch = "Vikram";
+		
+		for (String name : names) {
+			if(name.equals(nameToSearch)) {
+				System.out.println("Yes, "+nameToSearch+" exist in the list.");
+				break;
+			}
+		}
+		System.out.println("Operation Successfull...");
+	}
+
+}

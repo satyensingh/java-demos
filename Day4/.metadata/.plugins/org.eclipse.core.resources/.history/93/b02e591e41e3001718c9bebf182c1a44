@@ -1,0 +1,13 @@
+
+public class Test {
+	
+	static void display(Object obj) {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

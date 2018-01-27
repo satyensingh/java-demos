@@ -1,0 +1,29 @@
+class Search {
+	void find() {
+		boolean found = false;
+
+		String names[] = { "Satyen", "Vikram", "Pooja", "Vibhu", "Dinesh", "Pooh", "John", "Matt" };
+
+		String nameToSearch = "Vikram";
+
+		for (String name : names) {
+			if (name.equalsIgnoreCase(nameToSearch)) {
+				System.out.println("Yes, " + nameToSearch + " exist in the list.");
+				found = true;
+				break;
+			}
+			System.out.println("In Loop");
+		}
+		if (!found) {
+			System.out.println("Name " + nameToSearch + " does not exist in the list");
+		}
+		System.out.println("Operation Successfull...");
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+
+	}
+
+}
